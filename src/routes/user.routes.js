@@ -6,15 +6,15 @@ const UserController = require("../controllers/user.controller");
 router.get("/users", UserController.getAllUsers);
 
 // GET: ดึงข้อมูลผู้ใช้ตาม ID
-router.get("/:id", UserController.getUserById);
+router.get("/user/:id", UserController.getUserById);
 
 // POST: สร้างผู้ใช้ใหม่
-router.post("/", UserController.createUser);
+router.post("/user", UserController.createUser);
 
 // PUT: แก้ไขข้อมูลผู้ใช้
-router.put("/:id", UserController.updateUser);
+router.put("/user/:id", UserController.updateUser);
 
 // DELETE: ลบผู้ใช้
-router.delete("/:id", UserController.deleteUser);
+router.delete("/user/:id", UserController.deleteUser);
 
 module.exports = router;
