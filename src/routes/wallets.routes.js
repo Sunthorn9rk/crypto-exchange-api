@@ -2,6 +2,9 @@ const express = require("express");
 const router = express.Router();
 const WalletController = require("../controllers/wallet.controller");
 
+// GET: ดึงข้อมูลกระเป๋าเงินทั้งหมด
+router.get("/", WalletController.getAllWallets);
+
 // GET: ดึงข้อมูลกระเป๋าเงินของผู้ใช้
 router.get("/user/:userId", WalletController.getWalletsByUserId);
 

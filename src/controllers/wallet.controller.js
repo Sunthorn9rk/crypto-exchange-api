@@ -1,5 +1,14 @@
 const Wallet = require("../models/wallet.model");
 
+exports.getAllWallets = async (req, res) => {
+  try {
+    const wallets = await Wallet.findAll();
+    res.json(wallets);
+  } catch (error) {
+    res.status(500).json({error: "Error fetching wallets"});
+  }
+};
+
 exports.getWalletsByUserId = async (req, res) => {
   try {
     const wallets = await Wallet.findAll({where: {user_id: req.params.userId}});
