@@ -1,6 +1,9 @@
 # Crypto Exchange API 🪙
 
 API สำหรับระบบแลกเปลี่ยน Cryptocurrencies รองรับการซื้อ-ขายเหรียญดิจิทัลและการโอนเหรียญระหว่างผู้ใช้
+## Diagram
+![image](https://github.com/user-attachments/assets/5fc48d28-4700-43c3-a371-aa95ac5a55f2)
+
 
 supports:
 
